@@ -50,6 +50,31 @@ class FileUtil:
             return content_list
 
     @staticmethod
+    def load_file_with_encoding(folder_path, file_name, encoding):
+
+        content_list = []
+
+        try:
+            if not os.path.exists(folder_path):
+                return None
+
+            content_list.clear()
+
+            f = open(os.path.join(folder_path, file_name), "r", encoding=encoding)
+            content_array = f.readlines()
+
+            for content in content_array:
+                content = content.strip('\n')
+                content_list.append(content)
+
+        except Exception as e:
+            ILog.debug(FileUtil.__TAG, str(e))
+            return None
+
+        finally:
+            return content_list
+
+    @staticmethod
     def storage_file(folder_path, file_name, file):
 
         try:
