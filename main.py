@@ -3,6 +3,8 @@
 # @Author : Coding with cat
 # @File : main
 # @Project : SHPythonCode
+from framewrok.utility.gif_utility import GIFUtility
 
 if __name__ == '__main__':
     print("hello, world")
+    GIFUtility.make_gif("images", gif_name="haetae.gif")
