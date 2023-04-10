@@ -3,7 +3,10 @@
 # @Author : Coding with cat
 # @File : main
 # @Project : SHPythonCode
-from framewrok.utility.gif_utility import GIFUtility
+import openpyxl
+
+from framewrok.utility.log_utility import ILog
 
 if __name__ == '__main__':
-    GIFUtility.make_gif("images", gif_name="haetae.gif")
+    pass
+    # GIFUtility.make_gif("images", gif_name="haetae.gif")
