@@ -92,8 +92,8 @@ if __name__ == '__main__':
     # ILog.debug(__file__, generate_math_problem(number=dictionary["B"], symbol="B"))
     # ILog.debug(__file__, generate_math_problem(number=dictionary["C"], symbol="C"))
     # ILog.debug(__file__, generate_math_problem(number=dictionary["D"], symbol="D"))
-    
-    list = read_xlsx_file("버스정류장.xlsx")
+
+    list = read_xlsx_file("버스정류장.xlsx")
     ILog.debug(__file__, len(list))
 
     for item in list:
