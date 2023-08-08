@@ -25,6 +25,7 @@ from google.oauth2 import service_account
 from framewrok.utility.log_utility import ILog
 
 PROJECT_ID = 'treasurehunter-93e93'
+# PROJECT_ID = 'wheretogo-a5d66'
 BASE_URL = 'https://fcm.googleapis.com'
 FCM_ENDPOINT = 'v1/projects/' + PROJECT_ID + '/messages:send'
 FCM_URL = BASE_URL + '/' + FCM_ENDPOINT
@@ -38,10 +39,16 @@ def _get_access_token():
     :return: Access token.
     """
     credentials = service_account.Credentials.from_service_account_file(
-        'treasurehunter-93e93-firebase-adminsdk-xqvel-943e30a213.json', scopes=SCOPES)
+        # 'wheretogo-a5d66-firebase-adminsdk-aykyj-fe951f53bb.json',
+        'treasurehunter-93e93-firebase-adminsdk-xqvel-943e30a213.json',
+        scopes=SCOPES
+    )
     request = google.auth.transport.requests.Request()
     credentials.refresh(request)
-    return credentials.token
+
+    token = credentials.token
+    ILog.debug(__file__, token)
+    return token
 
 
 # [END retrieve_access_token]
@@ -77,10 +84,30 @@ def _build_common_message():
     """
     return {
         "message":{
-            "token":"dzjXJsbiRUuBprEPB_0Sv3:APA91bE-p3ekzgewW1xYHLuvsuHRSZXKr7lCgSRBchs39vX46c0e2SYc4uCaWTLBqU7hnacUhu6OYN8VeUOaTJO_El3MOHXfYCMSeSqAFF444-5FczXIy8VDB8yGhyJfedAtTsvNgmQR",
+            "token":"dtMLcP58RsqxDFnzARsh-D:APA91bHKmBQSwus8tPInH6SabKzmqecFV8pbTREEKwO618fgpB_IXOjRS-n8QNTwskOCQVUeGTm5S6ouLzrfo5P0X_9EnukY73Xv4US5Ihj8d8GSWQS_zksdnv_EzrwwtJihJNbRRW5s",
+            # "token":"dcXC_JW3k0EwtJCe1uMW0S:APA91bGSr9q_HtclOOuxhaGNadbMB1vXDUbXMXOATVrkChCTjcoj24ZRDwSGY0GDd2SRCbImhqVih-rHcnKRy0EUZyGNZFuI5d9pKVFw8ZtRdsQ5T8Y8-dzaBcsSIAGny5vQQBVzx1L8",
             "notification":{
                 "body":"This is an FCM notification message!",
                 "title":"FCM Message"
+            },
+            "data": {
+                "id": "12345",
+                "result": "pass",
+                "type": "minting"
+            },
+            "android": {
+                "notification": {
+                    "click_action": ""
+                }
+            },
+            "apns": {
+                "payload": {
+                    "aps": {
+                        "sound": "pager.wav",
+                        "badge": 0,
+                        "category" : ""
+                    }
+                }
             }
         }
     }
