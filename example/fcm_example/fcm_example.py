@@ -84,16 +84,16 @@ def _build_common_message():
     """
     return {
         "message":{
-            "token":"dtMLcP58RsqxDFnzARsh-D:APA91bHKmBQSwus8tPInH6SabKzmqecFV8pbTREEKwO618fgpB_IXOjRS-n8QNTwskOCQVUeGTm5S6ouLzrfo5P0X_9EnukY73Xv4US5Ihj8d8GSWQS_zksdnv_EzrwwtJihJNbRRW5s",
+            "token":"c31J8jCFDEEgp93O8j0hN0:APA91bHsVIyd-4jdF7PnwW3AufRhL-noJUhxF5ylHFOL2qw7J82MIMB0zstryAsMtWAHvuFEPKRukesKmv9pshXIF66SryAfzOhUZYzsdZoTj-oZZVUlNsCed3XFnbALprLxWLf20Sh1",
             # "token":"dcXC_JW3k0EwtJCe1uMW0S:APA91bGSr9q_HtclOOuxhaGNadbMB1vXDUbXMXOATVrkChCTjcoj24ZRDwSGY0GDd2SRCbImhqVih-rHcnKRy0EUZyGNZFuI5d9pKVFw8ZtRdsQ5T8Y8-dzaBcsSIAGny5vQQBVzx1L8",
             "notification":{
-                "body":"This is an FCM notification message!",
-                "title":"FCM Message"
+                "body":"This is message!",
+                "title":"This is title"
             },
             "data": {
                 "id": "12345",
-                "result": "pass",
-                "type": "minting"
+                "result": "0",
+                "type": "report"
             },
             "android": {
                 "notification": {
