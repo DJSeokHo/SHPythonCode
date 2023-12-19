@@ -84,7 +84,7 @@ def _build_common_message():
     """
     return {
         "message":{
-            "token":"c31J8jCFDEEgp93O8j0hN0:APA91bHsVIyd-4jdF7PnwW3AufRhL-noJUhxF5ylHFOL2qw7J82MIMB0zstryAsMtWAHvuFEPKRukesKmv9pshXIF66SryAfzOhUZYzsdZoTj-oZZVUlNsCed3XFnbALprLxWLf20Sh1",
+            "token":"ftpMVlQPpkecnbyjTYKoSy:APA91bH-SZoVXY9J_XFnfCDYh9P2yBgInH-7i5urJTypUgWy0zf3kv49zYh5MhY5vl8AFYl_MmKdwSAvKi1GRcGkNYFfPBEjKsSrXoKbi6sXA10PbWCXC4eHRZYPWVJ09rZioCpoTSBc",
             # "token":"dcXC_JW3k0EwtJCe1uMW0S:APA91bGSr9q_HtclOOuxhaGNadbMB1vXDUbXMXOATVrkChCTjcoj24ZRDwSGY0GDd2SRCbImhqVih-rHcnKRy0EUZyGNZFuI5d9pKVFw8ZtRdsQ5T8Y8-dzaBcsSIAGny5vQQBVzx1L8",
             "notification":{
                 "body":"This is message!",
