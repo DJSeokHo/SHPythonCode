@@ -8,5 +8,5 @@ import openpyxl
 from framewrok.utility.log_utility import ILog
 
 if __name__ == '__main__':
-    pass
+    ILog.debug(__file__, "test")
     # GIFUtility.make_gif("images", gif_name="haetae.gif")

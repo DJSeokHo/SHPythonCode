@@ -3,7 +3,7 @@
 import email.message
 import smtplib
 
-from app.framework.utility.log_utility import ILog
+from framewrok.utility.log_utility import ILog
 
 
 class EmailSender:
