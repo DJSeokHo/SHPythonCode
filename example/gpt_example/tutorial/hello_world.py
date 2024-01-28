@@ -9,7 +9,6 @@ from example.gpt_example.tutorial.gpt_constants import API_KET
 from framewrok.module.http.http_wrapper import HTTPWrapper
 from framewrok.utility.log_utility import ILog
 
-# TestKey: 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
 if __name__ == '__main__':
 
     # content = "Hello!"
