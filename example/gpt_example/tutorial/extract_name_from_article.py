@@ -1,3 +1,4 @@
+from example.gpt_example.tutorial.gpt_constants import API_KET
 from framewrok.module.http.http_wrapper import HTTPWrapper
 from framewrok.utility.log_utility import ILog
 
@@ -8,7 +9,7 @@ if __name__ == '__main__':
         .url("https://api.openai.com/v1/chat/completions") \
         .header({
             "Content-Type": "application/json",
-            "Authorization": "Bearer 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"
+            "Authorization": f"Bearer {API_KET}"
         }) \
         .body({
             "model": "gpt-3.5-turbo-1106",
